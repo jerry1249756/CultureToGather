@@ -1,11 +1,17 @@
 {
   "name": "CultureToGather",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "https://github.com/jerry1249756/CultureToGather.git",
   "author": "jerry1249756 <jerry1249756@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "cd backend && yarn start"
+    "start": "node index.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "path": "^0.12.7"
   }
 }
