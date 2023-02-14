@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-cover-wrapper {
+  width: 100%;
+  background-color: #191919;
+  height: 29rem;
+  display: flex;
+  justify-content: center;
+}
+
+.background-image {
+  width: 90%;
+  height: 25rem;
+  background-image: linear-gradient(rgba(1, 1, 1, 0.7), rgba(1, 1, 1, 0.6)),
+    url(https://metropolismag.com/wp-content/uploads/2021/08/Shanghai_CourtesyChenHao.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-out {
+  height: 5%;
+  color: snow;
+  font-size: 10px;
+  font-family: Catamaran;
+  margin: 0;
+}
+
+.background-upper {
+  text-align: center;
+  height: 20%;
+  font-size: 50px;
+  font-family: DM Serif Display;
+  color: snow;
+}
+
+.get-start-btn {
+  padding: 3px 25px;
+  text-align: center;
+  display: inline-block;
+  background-color: rgba(1, 1, 1, 0.3);
+  border: 1.5px solid rgba(255, 255, 255, 0);
+  border-radius: 30px;
+  border-color: #bda06a;
+  color: #bda06a;
+  font-family: Catamaran;
+  font-size: 12px;
+  transition: 0.5s;
+}
+
+.get-start-btn:hover {
+  cursor: pointer;
+  background-color: rgba(1, 1, 1, 0.7);
+}
+
+@media screen and (max-width: 660px) {
+  .cover-section {
+    margin-top: 4rem;
+  }
+  .background-image {
+    margin-top: 2rem;
+  }
+}
+
+/* --------------------- Responsive ---------------------------- */
+@media screen and (max-width: 730px) {
+  .background-upper {
+    font-size: 40px;
+  }
+  .get-start-btn {
+    padding: 1px 15px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .background-upper {
+    width: 20rem;
+    font-size: 35px;
+    height: 30%;
+  }
+  .get-start-btn {
+    padding: 1px 15px;
+  }
+}

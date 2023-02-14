@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.service-intro-wrapper {
+  height: 29rem;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.s-i-wrapper-all {
+  width: 55rem;
+  height: 22rem;
+  background-color: #272420;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: inset 0px 0px 7px 5px #222222, 0px 0px 20px 10px #111111;
+}
+
+.service-intro-title {
+  height: 25%;
+  width: 80%;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-intro-title p {
+  font-size: 20px;
+  font-family: Catamaran;
+  color: #a9a9a9;
+}
+
+.s-i-wrapper-three {
+  height: 50%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services {
+  height: 100%;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.services:hover {
+  transform: scale(1.05);
+}
+
+.services-upper {
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.services-upper i {
+  color: #bda06a;
+  font-size: 25px;
+}
+
+.services-lower {
+  height: 60%;
+}
+
+.services-lower p {
+  font-size: 10px;
+  text-align: center;
+  color: snow;
+  font-family: "Karla", sans-serif;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+
+.service-learn-more {
+  height: 25%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.service-intro-btn {
+  padding: 3px 25px;
+  text-align: center;
+  display: inline-block;
+  background-color: rgba(1, 1, 1, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0);
+  border-radius: 30px;
+  border-color: #bda06a;
+  color: #bda06a;
+  font-family: Catamaran;
+  font-size: 12px;
+  transition: 0.5s;
+}
+
+.service-intro-btn:hover {
+  cursor: pointer;
+  background-color: rgba(1, 1, 1, 0.5);
+}
+
+/* ------------------------ Responsive -------------------------- */
+@media screen and (max-width: 910px) {
+  .s-i-wrapper-all {
+    width: 45rem;
+    height: 25rem;
+  }
+  .service-learn-more {
+    padding-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  .s-i-wrapper-all {
+    width: 80%;
+    height: 30rem;
+  }
+  .service-intro-title {
+    height: 18%;
+    padding-top: 0rem;
+  }
+  .s-i-wrapper-three {
+    flex-direction: column;
+    width: 90%;
+    height: 65%;
+  }
+  .services {
+    height: 30%;
+    width: 17.8rem;
+  }
+  .service-learn-more {
+    padding-top: 0.5rem;
+    height: 15%;
+  }
+  .service-intro-wrapper {
+    padding-bottom: 2rem;
+  }
+}

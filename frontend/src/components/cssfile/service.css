@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.service-wrapper {
+  width: 100%;
+  background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-upper-section {
+  margin-top: 3rem;
+  width: 40rem;
+  height: 17rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.ser-upp-left {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.service-title {
+  height: 25%;
+  width: 100%;
+  color: snow;
+}
+.service-title h3 {
+  font-family: "Rozha One", serif;
+  font-size: 40px;
+  font-weight: lighter;
+}
+.service-description {
+  height: 30%;
+  width: 100%;
+}
+.service-description p {
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: snow;
+}
+.service-three-icons {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ser-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28%;
+  height: 70%;
+  margin-top: 3rem;
+}
+.ser-icon-wrapper .fas {
+  color: #bda06a;
+}
+.ser-icon-wrapper p {
+  color: snow;
+  font-family: "Karla", sans-serif;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.ser-upp-right {
+  position: relative;
+  width: 50%;
+  height: 95%;
+  background-image: linear-gradient(rgba(1, 1, 1, 0.1), rgba(1, 1, 1, 0.3)),
+    url(https://www.culturepartnership.eu/upload/news/5e340eb81396a.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 2rem;
+}
+.ser-upp-right::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: -1.6rem;
+  height: 17rem;
+  width: 19rem;
+  border: solid 1.5px #bda06a;
+}
+
+.service-lower-section {
+  margin-top: 3rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.service-lower-title {
+  height: 3rem;
+  color: #a9a9a9;
+  font-family: Catamaran;
+  letter-spacing: 3px;
+  font-size: 20px;
+  margin: 2rem;
+}
+.service-lower-three-wrapper {
+  width: 35rem;
+  height: 40rem;
+}
+.three-service-wrapper {
+  width: 100%;
+  height: 30%;
+  margin-bottom: 1rem;
+  background-color: snow;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 3px 3px 6px #111111, -3px -3px 6px #111111;
+}
+
+.lower-wrapper-left {
+  width: 45%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.lower-wrapper-left-title {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+.lower-wrapper-left-title .fas {
+  width: 20%;
+  margin-left: 0rem;
+  font-size: 23px;
+  color: #191919;
+}
+.service-lower-function-name {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #191919;
+}
+.lower-wrapper-left-des {
+  height: 50%;
+  width: 90%;
+  margin-top: 1rem;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.first .lower-wrapper-right {
+  width: 50%;
+  height: 100%;
+  border-radius: 0 1rem 1rem 0;
+  background-image: linear-gradient(rgba(1, 1, 1, 0.1), rgba(1, 1, 1, 0.3)),
+    url(https://images.squarespace-cdn.com/content/v1/57f0719c725e25e914a27b76/1476469701090-IYP1U1RNY0D3M72C5H3A/events-heavenly-header.jpg?format=1500w);
+  background-position: center;
+  background-size: cover;
+}
+.second .lower-wrapper-right {
+  width: 50%;
+  height: 100%;
+  border-radius: 0 1rem 1rem 0;
+  background-image: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.3)),
+    url(https://blog.csiro.au/wp-content/uploads/2018/11/DSC9533.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.third .lower-wrapper-right {
+  width: 50%;
+  height: 100%;
+  border-radius: 0 1rem 1rem 0;
+  background-image: linear-gradient(rgba(1, 1, 1, 0.3), rgba(1, 1, 1, 0.5)),
+    url(https://i.pinimg.com/736x/4e/5b/92/4e5b928d64ff50d8b77c9ea62ea9b788.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* --------------------------- Responsive ---------------------------- */
+@media screen and (max-width: 720px) {
+  .service-upper-section {
+    width: 35rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  .service-upper-section {
+    margin-bottom: 2rem;
+    height: 25rem;
+    width: 25rem;
+    margin-top: 7rem;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .ser-upp-left {
+    width: 90%;
+    height: 45%;
+  }
+  .service-description {
+    margin-top: 1rem;
+  }
+  .ser-upp-right {
+    margin-top: 2rem;
+    width: 90%;
+    height: 45%;
+  }
+  .ser-upp-right::before {
+    height: 11rem;
+    width: 23rem;
+  }
+  .service-lower-three-wrapper {
+    width: 28rem;
+  }
+  .lower-wrapper-left {
+    width: 60%;
+  }
+  .first .lower-wrapper-right {
+    width: 30%;
+  }
+  .second .lower-wrapper-right {
+    width: 30%;
+  }
+  .third .lower-wrapper-right {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 490px) {
+  .service-upper-section {
+    width: 20rem;
+  }
+  .ser-upp-right::before {
+    height: 11rem;
+    width: 18.3rem;
+  }
+  .three-service-wrapper {
+    flex-direction: column-reverse;
+    width: 20rem;
+  }
+  .first .lower-wrapper-right {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: 30%;
+  }
+  .second .lower-wrapper-right {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: 30%;
+  }
+  .third .lower-wrapper-right {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: 30%;
+  }
+  .service-lower-three-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lower-wrapper-left {
+    margin-top: 0.5rem;
+    align-items: center;
+    width: 90%;
+    height: 60%;
+  }
+  .lower-wrapper-left-des {
+    font-size: 12px;
+  }
+}
