@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/jerry1249756/CultureToGather.git",
   "author": "jerry1249756 <jerry1249756@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "cd backend && yarn start"
+  }
 }
